@@ -10,7 +10,7 @@ import { Mail, Phone, MapPin, FileDown, Network, Shield, Server, Github, Linkedi
 
 const data = {
   nameEN: "Chanatkron Ariya-Amonlert",
-  nameTH: "ชนัฐกร อริยาอมรเลิศ",
+  nameTH: "ชนัฐกร อริยะอมรเลิศ",
   role: "Network Engineer",
   summary: `นักศึกษาวิศวกรรมคอมพิวเตอร์ เน้นโครงสร้างพื้นฐานเครือข่าย (Network Infrastructure)\nถนัด Cisco Packet Tracer, ตั้งค่าอุปกรณ์ Cisco/Huawei ขั้นพื้นฐาน และแก้ปัญหาเครือข่ายแบบมีระบบ`,
   contacts: {
@@ -205,7 +205,7 @@ function Contact() {
       <div className="grid md:grid-cols-3 gap-6">
         <a href={`mailto:${data.contacts.email}`} className="rounded-2xl border p-5 shadow-sm hover:shadow flex items-center gap-3"><Mail className="w-5 h-5"/><div><div className="text-sm text-neutral-500">Email</div><div>{data.contacts.email}</div></div></a>
         <a href={`tel:${data.contacts.phone}`} className="rounded-2xl border p-5 shadow-sm hover:shadow flex items-center gap-3"><Phone className="w-5 h-5"/><div><div className="text-sm text-neutral-500">Phone</div><div>{data.contacts.phone}</div></div></a>
-        <a href={data.contacts.resumeUrl} download className="rounded-2xl border p-5 shadow-sm hover:shadow flex items-center gap-3"><FileDown className="w-5 h-5"/><div><div className="text-sm text-neutral-500">Résumé</div><div>Download PDF</div></div></a>
+        <a href={data.contacts.resumeUrl} download className="rounded-2xl border p-5 shadow-sm hover:shadow flex items-center gap-3"><FileDown className="w-5 h-5"/><div><div className="text-sm text-neutral-500">Resume</div><div>Download PDF</div></div></a>
       </div>
     </Section>
   );
@@ -224,7 +224,7 @@ export default function Portfolio() {
         <Education />
         <Contact />
         <footer className="border-t mt-10 py-8 text-center text-sm text-neutral-500">
-          © {new Date().getFullYear()} {data.nameEN}. Built with ♥
+          {new Date().getFullYear()} {data.nameEN}. Built with ♥
         </footer>
       </div>
     </div>
