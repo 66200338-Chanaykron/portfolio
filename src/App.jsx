@@ -114,7 +114,7 @@ function Hero() {
               <Phone className="w-4 h-4"/> {data.contacts.phone}
             </a>
             <a href={data.contacts.resumeUrl} className="inline-flex items-center gap-2 rounded-xl border px-3 py-2 shadow-sm hover:shadow" download>
-              <FileDown className="w-4 h-4"/> Download CV
+              <FileDown className="w-4 h-4"/> Download Resume
             </a>
           </div>
         </div>
