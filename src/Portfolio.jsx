@@ -217,8 +217,8 @@ export default function Portfolio() {
         <Work />
         <Education />
         <Contact />
-        <footer className="border-t mt-10 py-8 text-center text-sm text-neutral-500">
-          © {new Date().getFullYear()} {data.nameEN}. Built with ♥
+        <footer className="border-t mt-10 py-8 text-center text-sm text-neutral-500"> 
+          &copy; {new Date().getFullYear()} Chanatkron Ariya-Amonlert. All rights reserved.
         </footer>
       </div>
     </div>
