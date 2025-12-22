@@ -8,7 +8,7 @@ import resumePdf from '../assets/Resume_Chanatkron.pdf';
 
 const Hero = () => {
   return (
-    <section id="about" className="pt-24 pb-12 sm:pt-32 sm:pb-20 lg:pb-32 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+    <section id="about" className="pt-24 pb-12 sm:pt-32 sm:pb-20 lg:pb-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           

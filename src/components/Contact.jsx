@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Globe } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="relative z-10 overflow-hidden py-20 bg-gray-900 text-white border-t border-gray-800">
+    <section id="contact" className="relative z-50 overflow-hidden py-20 text-white" style={{ backgroundColor: '#111827' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-extrabold sm:text-4xl mb-6">Get In Touch</h2>
