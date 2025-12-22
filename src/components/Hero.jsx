@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { resumeData } from '../data/resumeData';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, Github } from 'lucide-react';
 
 import profileImage from '../assets/profile.jpg';
 import resumePdf from '../assets/Resume_Chanatkron.pdf';
@@ -28,26 +28,39 @@ const Hero = () => {
             <p className="mt-4 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               {resumeData.about}
             </p>
-            <div className="mt-8 sm:mt-12 sm:flex sm:justify-center lg:justify-start gap-4">
+            <div className="mt-8 sm:mt-12 sm:flex sm:justify-center lg:justify-start gap-3">
               <div className="rounded-md shadow">
                 <a
                   href="#contact"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg transition-all"
+                  className="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg transition-all"
                 >
                   Contact Me
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </div>
-              <div className="mt-3 sm:mt-0 sm:ml-3">
+              <div className="mt-3 sm:mt-0">
                 <a
                   href={resumePdf}
                   download="Resume_Chanatkron.pdf"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg transition-all"
+                  className="w-full flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg transition-all"
                 >
-                  Download Resume
+                  Resume
                   <Download className="ml-2 h-5 w-5" />
                 </a>
               </div>
+              {resumeData.github && (
+                <div className="mt-3 sm:mt-0">
+                  <a
+                    href={resumeData.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-gray-50 hover:bg-gray-100 md:py-4 md:text-lg transition-all"
+                  >
+                    GitHub
+                    <Github className="ml-2 h-5 w-5" />
+                  </a>
+                </div>
+              )}
             </div>
           </motion.div>
 
