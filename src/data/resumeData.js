@@ -1,4 +1,6 @@
 import { Layout, Server, Wifi, Terminal, Database, Code, Globe, Cpu } from 'lucide-react';
+import solarPdf from '../assets/Poster-solarcell.pdf';
+import rltgPdf from '../assets/RLTG.pdf';
 
 export const resumeData = {
   name: "Chanatkron Ariya-Amonlert",
@@ -28,6 +30,18 @@ export const resumeData = {
     {
       title: "NETWORKING LAB EXPERIENCE",
       description: "Routing & Switching: Configured RIP v2 and Inter-VLAN routing to enable seamless cross-segment communication. Network Services: Set up DHCP Servers and Outbound NAT on Huawei routers for automated addressing and internet access. Traffic Control: Implemented ACLs to enforce security policies and filter traffic based on network requirements."
+    },
+    {
+      title: "RLTG Web Application (rltg.online)",
+      description: "Developed a web application featuring a comprehensive database management system. Designed and implemented the database schema to support application requirements. The project involves full-stack development principles, focusing on data integrity and user interaction.",
+      attachment: rltgPdf,
+      attachmentLabel: "View Project PDF"
+    },
+    {
+      title: "Solar Cell Tracking System (Smart Dual-Axis)",
+      description: "Developed a dual-axis solar tracking system using ESP32 and LDR sensors to optimize energy generation (increasing efficiency by 20-40% compared to fixed systems). Integrated with Raspberry Pi 4 for data logging (InfluxDB) and visualization (Grafana). Features include automated tracking, manual control, and real-time efficiency monitoring.",
+      attachment: solarPdf,
+      attachmentLabel: "View Project Poster"
     }
   ],
   skills: {

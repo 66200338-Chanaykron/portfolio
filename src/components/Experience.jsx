@@ -1,6 +1,6 @@
 import React from 'react';
 import { resumeData } from '../data/resumeData';
-import { Briefcase, GraduationCap, Calendar } from 'lucide-react';
+import { Briefcase, GraduationCap, Calendar, FileText } from 'lucide-react';
 
 const Experience = () => {
   return (
@@ -26,6 +26,17 @@ const Experience = () => {
                   <p className="mt-2 text-gray-600 leading-relaxed text-sm">
                     {item.description}
                   </p>
+                  {item.attachment && (
+                    <a 
+                      href={item.attachment} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center mt-3 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
+                    >
+                      <FileText className="w-4 h-4 mr-1" />
+                      {item.attachmentLabel || "View Attachment"}
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
