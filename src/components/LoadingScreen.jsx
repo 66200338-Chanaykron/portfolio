@@ -28,7 +28,7 @@ const LoadingScreen = ({ onComplete }) => {
           }, 500);
           return 100;
         }
-        return prev + 0.5;
+        return prev + 1;
       });
     }, 15);
 
